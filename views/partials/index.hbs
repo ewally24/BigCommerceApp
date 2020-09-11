@@ -1,9 +1,40 @@
-<h2>Shoppable BigCommerce Shoptimizer</h2>
-<form action='/linkApiData' method='POST'>
+<form class='form' action='/linkApiData' method='POST'>
+  <section class="form-header">
+    <img class="logo center" src='https://s3-us-west-1.amazonaws.com/assets.shoppable.com/logo.jpg'
+      alt="shoppable-logo" />
+    <p>BigCommerce App</p>
+  </section>
   <div class='form-group row'>
-    <label for="xclientData" class="col-form-label">xAuthClient</label>
-    <div class="col-md-6 col-sm-10 col-lg-6">
-      <input type="text" class="form-control" id="xclientData" name="xclientData" />
+    <label for="xclientData" class="">xAuthClient</label>
+    <div class="col-md-12 col-sm-12 col-lg-12">
+      <input type="text" class="form-control text-input" id="xclientData" name="xclientData" />
+    </div>
+  </div>
+
+  <div class='form-group row'>
+    <label for="xAuthToken" class="col-form-label">xAuthToken</label>
+    <div class="col-md-12 col-sm-12 col-lg-12">
+      <input type="password" class="form-control text-input" id="xAuthToken" name="xAuthToken" />
+    </div>
+  </div>
+
+  <div class='form-group row'>
+    <label for="storeHash" class="col-form-label">Store Hash</label>
+    <div class="col-md-12 col-sm-12 col-lg-12">
+      <input type="text" class="form-control text-input" id="storeHash" name="storeHash" />
+    </div>
+  </div>
+
+  <div class='form-group row'>
+    <label for="merchant" class="col-form-label">Store Brand</label>
+    <div class="col-md-12 col-sm-12 col-lg-12">
+      <input type="text" class="form-control text-input" id="merchant" name="merchant" />
+    </div>
+  </div>
+
+  <div class='form-group row'>
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary" id="submit-btn">Connect Store</button>
     </div>
   </div>
 </form>
