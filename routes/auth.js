@@ -20,7 +20,7 @@ const bigCommerce = new BigCommerce({
 router.get("/", (req, res, next) => {
   bigCommerce
     .authorize(req.query)
-    .then(data => {
+    .then((data) => {
       if (typeof data.access_token !== "undefined") {
         //===========================================================+
         // data.acces_token
